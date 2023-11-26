@@ -1,6 +1,7 @@
 package com.eipulse.teamproject.dto.formapprovaldto;
 
 import java.sql.Time;
+import java.time.LocalDateTime;
 
 import com.eipulse.teamproject.entity.formapproval.Overtime;
 import lombok.AllArgsConstructor;
@@ -18,7 +19,7 @@ public class FormOvertimeDTO {
 	private Integer typeId;
 	private String typeName;
 	private String reason;
-	private java.sql.Date date;
+	private LocalDateTime date;
 	private Time startTime;
 	private Time endTime;
 	private String file;

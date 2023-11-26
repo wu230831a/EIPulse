@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -23,7 +23,7 @@ public class MessageEntity {
     @DateTimeFormat(pattern = "yyyy/MM/dd HH:mm:ss")
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "Created_at")
-    private Date createdAt;
+    private LocalDateTime createdAt;
     private String file;
     private Integer receiver;
     private Integer sender;

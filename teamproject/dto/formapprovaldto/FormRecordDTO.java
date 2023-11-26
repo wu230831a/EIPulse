@@ -12,7 +12,7 @@ import java.util.List;
 public class FormRecordDTO {
     private Integer formId;
     private Integer typeId;
-    private int empId;
+    private Integer empId;
     private Integer statusId;
     private LocalDateTime startDate;
     private LocalDateTime endDate;

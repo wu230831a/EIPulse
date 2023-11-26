@@ -15,7 +15,7 @@ public class FormType {
 
 	@Id
 	@Column(name = "Type_id")
-	private int typeId;
+	private Integer typeId;
 	@Column(name = "Type_name")
 	private String typeName;
 

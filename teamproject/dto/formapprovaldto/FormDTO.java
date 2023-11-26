@@ -11,9 +11,9 @@ import lombok.Setter;
 @Setter
 public class FormDTO {
 	
-	private int empId; 
-	private int auditor;
-	private int[] auditors;
+	private Integer empId;
+	private Integer auditor;
+	private Integer[] auditors;
 	private Integer formId;
 	private Integer eventId;
 	private Integer auditEventId;

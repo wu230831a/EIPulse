@@ -29,11 +29,11 @@ public class FormAuditEventLog {
 	@Id
 	@Column(name = "Event_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int eventId;
+	private Integer eventId;
 	@Column(name = "Auditor")
-	private int auditor;
+	private Integer auditor;
 	@Column(name = "Status_id")
-	private int StatusId;
+	private Integer StatusId;
 	@Column(name = "Message")
 	private String message;
 	@DateTimeFormat(pattern = "yyyy/MM/dd HH:mm:ss")

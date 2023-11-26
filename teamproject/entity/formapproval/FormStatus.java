@@ -16,7 +16,7 @@ public class FormStatus {
 	@Id
 	@Column(name = "Status_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int statusId;
+	private Integer statusId;
 	
 	@Column(name = "Description")
 	private String description;

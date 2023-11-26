@@ -37,7 +37,7 @@ public class FormRecord {
 	@Column(name="Type_id")
 	private Integer typeId;
 	@Column(name="Emp_id")
-	private int empId;
+	private Integer empId;
 	@Column(name = "Status_id")
 	private Integer statusId;
 	@DateTimeFormat(pattern = "yyyy/MM/dd HH:mm:ss")

@@ -13,6 +13,8 @@ import lombok.Setter;
 
 
 import java.sql.Time;
+import java.time.LocalDateTime;
+
 import jakarta.persistence.ManyToOne;
 import lombok.NoArgsConstructor;
 
@@ -43,7 +45,7 @@ public class Overtime {
 	private String reason;
 
 	@Column(name="date")
-	private java.sql.Date date;
+	private LocalDateTime date;
 
 	@Column(name = "start_time")
 	private Time startTime;

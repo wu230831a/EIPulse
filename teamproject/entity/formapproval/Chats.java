@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Getter
@@ -16,13 +17,13 @@ public class Chats {
     @Id
     @Column(name = "chats_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int chatsId;
+    private Integer chatsId;
 
     @Column(name = "Emp_id")
     private String empId;
 
     @Column(name = "Room_id")
-    private int roomId;
+    private Integer roomId;
 
     @Column(name = "Message")
     private String message;
@@ -36,7 +37,7 @@ public class Chats {
     @DateTimeFormat(pattern = "yyyy/MM/dd HH:mm:ss")
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "Created_at")
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
 //    @ManyToOne
 //    @JoinColumn(name = "Emp_id", referencedColumnName = "Emp_id", insertable = false, updatable = false)
